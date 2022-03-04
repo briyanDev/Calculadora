@@ -1,0 +1,68 @@
+$primary-color: #D9D9D9;
+
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+    width: 260px;
+    border: 10px solid black;
+    border-radius: 20px;
+    background-color: $primary-color;
+    & .display{
+        height: 150px;
+        width: 100%;
+        overflow: visible;
+        position: relative;
+        & span{
+            position: absolute;
+            right: 0;
+            top: 40px;
+            margin-right: 20px;
+            font-size: 20px;
+            font-family: monospace;
+            color: grey;
+        }
+        & p{
+            float: right;
+            margin-top: 70px;
+            margin-right: 10px;
+            padding: 0;
+            font-size: 50px;
+            font-family: monospace;
+        }
+    }
+    & .components{
+        display: block;
+       & div{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 5px;
+            & button{
+                width: 60px;
+                padding: 20px 0px;
+                border: 1px solid transparent;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 600;
+                font-family: monospace;
+                transition: 0.3s all ease;
+                &:last-child{
+                    background-color: orange;
+                    &:hover{
+                        background-color: rgba(255, 166, 0, 0.692);
+                    }
+                }
+                &:hover{
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
